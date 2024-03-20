@@ -11,7 +11,7 @@ export default function Home() {
             const uniqueTwittsSet = new Set();
 
             for (const acc of accounts) {
-                if(acc != account) {
+                if(acc !== account) {
                     const _twitts = await contract.methods.UserTwitts(acc).call({ from: account });
 
                     _twitts.forEach((twit) => uniqueTwittsSet.add(twit));
