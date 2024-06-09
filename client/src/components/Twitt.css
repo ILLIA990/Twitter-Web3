@@ -8,8 +8,7 @@
     border-radius: 2vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: start;
+    box-shadow: 19px 20px 20px 9px rgba(0, 0, 0, 0.1);
 }
 
 h3, h2 {
@@ -27,8 +26,8 @@ h3, h2 {
 }
 
 .like {
-    width: 4vh;
-    height: 4vh;
+    width: 3vh;
+    height: 3vh;
 }
 
 .twitt-pic {

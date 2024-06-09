@@ -38,6 +38,14 @@ input {
   box-shadow: 16px 16px 20px 7px rgba(0, 0, 0, 0.1);
 }
 
-input:hover {
-
+.user-info-account {
+    height: auto;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(0 0 0 / 0%);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 5px 7px 20px 15px rgba(0, 0, 0, 0.1);
 }

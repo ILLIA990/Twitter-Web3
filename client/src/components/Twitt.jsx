@@ -24,7 +24,7 @@ export default function Twitt({twit}) {
             </Link>
             <h3 style={{marginTop: '2vh'}}>{twit.text}</h3>
             <div className="likes">
-                <img alt="like" src="https://pngimg.com/uploads/like/like_PNG40.png" className='like'/>
+                <img alt="like" src="./like-2.svg" className='like'/>
                 <h3>{twit.likes.toString()}</h3>
             </div>
         </div>
