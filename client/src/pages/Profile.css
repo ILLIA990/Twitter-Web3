@@ -12,20 +12,6 @@
     justify-content: space-between;
 }
 
-.edit-btn {
-    cursor: pointer;
-    margin-bottom: 5vh;
-    min-width: 20vh;
-    width: auto;
-    max-width: 30vh;
-    height: 5vh;
-    color: white;
-    font-size: 1.2rem;
-    background-color: var(--primary-color);
-    border-radius: 2vh;
-    border-style: none;
-}
-
 .registration {
     display: flex;
     align-items: center;
@@ -38,15 +24,6 @@
     display: flex;
     flex-direction: column;
     justify-content: left;
-}
-
-input {
-    padding-inline: 5px;
-    outline: none;
-    height: 5vh;
-    border-style: inset;
-    border-color: var(--primary-color);
-    border-radius: 2vh;
 }
 
 .add-twitt {
@@ -80,3 +57,31 @@ input {
     border-radius: 1vh;
     border-style: none;
 }
+
+.edit-btn {
+    cursor: pointer;
+    margin-bottom: 5vh;
+    min-width: 20vh;
+    width: auto;
+    max-width: 30vh;
+    height: 5vh;
+    color: black;
+    font-size: 1.2rem;
+    background-color: #ffffff54;
+    border-radius: 20px;
+    border-style: none;
+    box-shadow: 20px 16px 20px 3px rgba(0, 0, 0, 0.1);
+}
+
+.user-balance-account {
+    display: flex;
+    background: #06172b4a;
+    border-radius: 30px;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+    padding: 18px;
+    color: #06172b;
+    box-shadow: 12px 19px 20px 15px rgba(0, 0, 0, 0.1);
+}
+

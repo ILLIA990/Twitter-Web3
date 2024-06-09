@@ -145,7 +145,7 @@ export default function Profile() {
                     <img src={user && user.avatar ? user.avatar : process.env.PUBLIC_URL + '/basicProfile.png'} alt="avatar" className='avatar' />
                 </div>
                 <div className='user-info'>
-                    <div style={{marginTop: '5vh'}}>
+                    <div className='user-balance-account' style={{marginTop: '5vh'}}>
                         <h2>Account: <span style={{color: theme.primaryColor}}>{account}</span></h2>
                         <h2>Balance: {balance} TWT</h2>
                     </div>

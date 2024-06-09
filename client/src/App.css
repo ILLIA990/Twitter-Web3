@@ -27,3 +27,17 @@
 .App-link {
   color: #06172b;
 }
+
+input {
+  padding-inline: 20px;
+  outline: none;
+  height: 5vh;
+  border-style: none;
+  border-color: rgba(3, 113, 113, 0.1);
+  border-radius: 20px;
+  box-shadow: 16px 16px 20px 7px rgba(0, 0, 0, 0.1);
+}
+
+input:hover {
+
+}

@@ -17,10 +17,11 @@ export default function CustomHeader() {
             <Link to={"/"}><h1 style={{color: 'white'}}>Twitter dApp</h1></Link>
             <Link to={"/profile"}>
                 <img style={{
-                    width: '6vh',
-                    height: '6vh'
+                    width: '5.5vh',
+                    height: '5.5vh'
+
                 }}
-                     src={process.env.PUBLIC_URL + '/profile-pic.png'}
+                     src='./avatar.svg'
                      alt='user'/>
 
             </Link>
