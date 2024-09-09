@@ -49,3 +49,28 @@ input {
     border-radius: 20px;
     box-shadow: 5px 7px 20px 15px rgba(0, 0, 0, 0.1);
 }
+
+:where(.css-dev-only-do-not-override-11lehqq).ant-skeleton.ant-skeleton-element .ant-skeleton-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    background: rgba(0, 0, 0, 0.06);
+    border-radius: 3vh;
+    width: 30vh;
+    height: 30vh;
+    line-height: 150px;
+}
+
+:where(.css-dev-only-do-not-override-11lehqq).ant-empty .ant-empty-image {
+    height: 450px;
+    margin-bottom: 8px;
+    margin: 100px 0px 0px 0px;
+}
+
+:where(.css-dev-only-do-not-override-11lehqq).ant-empty .ant-empty-description {
+    color: #0f2b46;
+    font-size: 18px;
+    margin-top: -120px;
+    font-family: MONOSPACE;
+}

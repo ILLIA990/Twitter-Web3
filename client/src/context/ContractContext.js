@@ -14,7 +14,7 @@ export const ContractProvider = ({ children }) => {
 
     useEffect(() => {
         const initializeContract = async () => {
-            const web3 = new Web3(Web3.givenProvider || 'http://127.0.0.1:7545');
+            const web3 = new Web3(Web3.givenProvider || 'http://127.0.0.1:8545');
             if (window.ethereum) {
                 try {
                     const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });

@@ -1,197 +1,118 @@
 [
+  { "type": "constructor", "inputs": [], "stateMutability": "nonpayable" },
   {
-    "inputs": [],
-    "stateMutability": "nonpayable",
-    "type": "constructor"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "string",
-        "name": "_username",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "_password",
-        "type": "string"
-      }
-    ],
-    "name": "Registration",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "string",
-        "name": "_password",
-        "type": "string"
-      }
-    ],
-    "name": "Login",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "Logout",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "_user",
-        "type": "address"
-      }
-    ],
-    "name": "GetUser",
-    "outputs": [
-      {
-        "components": [
-          {
-            "internalType": "address",
-            "name": "login",
-            "type": "address"
-          },
-          {
-            "internalType": "string",
-            "name": "password",
-            "type": "string"
-          },
-          {
-            "internalType": "string",
-            "name": "username",
-            "type": "string"
-          },
-          {
-            "internalType": "string",
-            "name": "avatar",
-            "type": "string"
-          }
-        ],
-        "internalType": "struct Twitter.User",
-        "name": "",
-        "type": "tuple"
-      }
-    ],
-    "stateMutability": "view",
     "type": "function",
-    "constant": true
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "string",
-        "name": "_text",
-        "type": "string"
-      }
-    ],
     "name": "AddTwitt",
+    "inputs": [{ "name": "_text", "type": "string", "internalType": "string" }],
     "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
+    "stateMutability": "nonpayable"
   },
   {
+    "type": "function",
+    "name": "CheckRegistration",
     "inputs": [
-      {
-        "internalType": "address",
-        "name": "_user",
-        "type": "address"
-      }
+      { "name": "_user", "type": "address", "internalType": "address" }
     ],
-    "name": "UserTwitts",
+    "outputs": [{ "name": "", "type": "bool", "internalType": "bool" }],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "GetUser",
+    "inputs": [
+      { "name": "_user", "type": "address", "internalType": "address" }
+    ],
     "outputs": [
       {
+        "name": "",
+        "type": "tuple",
+        "internalType": "struct Twitter.User",
+        "components": [
+          { "name": "login", "type": "address", "internalType": "address" },
+          { "name": "password", "type": "string", "internalType": "string" },
+          { "name": "username", "type": "string", "internalType": "string" },
+          { "name": "avatar", "type": "string", "internalType": "string" }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "Login",
+    "inputs": [
+      { "name": "_password", "type": "string", "internalType": "string" }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "Logout",
+    "inputs": [],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "Registration",
+    "inputs": [
+      { "name": "_username", "type": "string", "internalType": "string" },
+      { "name": "_password", "type": "string", "internalType": "string" }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "UpdateUser",
+    "inputs": [
+      { "name": "_avatar", "type": "string", "internalType": "string" }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "UserTwitts",
+    "inputs": [
+      { "name": "_user", "type": "address", "internalType": "address" }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple[]",
+        "internalType": "struct Twitter.Twitt[]",
         "components": [
           {
-            "components": [
-              {
-                "internalType": "address",
-                "name": "login",
-                "type": "address"
-              },
-              {
-                "internalType": "string",
-                "name": "password",
-                "type": "string"
-              },
-              {
-                "internalType": "string",
-                "name": "username",
-                "type": "string"
-              },
-              {
-                "internalType": "string",
-                "name": "avatar",
-                "type": "string"
-              }
-            ],
-            "internalType": "struct Twitter.User",
             "name": "author",
-            "type": "tuple"
+            "type": "tuple",
+            "internalType": "struct Twitter.User",
+            "components": [
+              { "name": "login", "type": "address", "internalType": "address" },
+              {
+                "name": "password",
+                "type": "string",
+                "internalType": "string"
+              },
+              {
+                "name": "username",
+                "type": "string",
+                "internalType": "string"
+              },
+              { "name": "avatar", "type": "string", "internalType": "string" }
+            ]
           },
+          { "name": "text", "type": "string", "internalType": "string" },
+          { "name": "likes", "type": "uint256", "internalType": "uint256" },
           {
-            "internalType": "string",
-            "name": "text",
-            "type": "string"
-          },
-          {
-            "internalType": "uint256",
-            "name": "likes",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
             "name": "createdTime",
-            "type": "uint256"
+            "type": "uint256",
+            "internalType": "uint256"
           }
-        ],
-        "internalType": "struct Twitter.Twitt[]",
-        "name": "",
-        "type": "tuple[]"
+        ]
       }
     ],
-    "stateMutability": "view",
-    "type": "function",
-    "constant": true
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "_user",
-        "type": "address"
-      }
-    ],
-    "name": "CheckRegistration",
-    "outputs": [
-      {
-        "internalType": "bool",
-        "name": "",
-        "type": "bool"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function",
-    "constant": true
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "string",
-        "name": "_avatar",
-        "type": "string"
-      }
-    ],
-    "name": "UpdateUser",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
+    "stateMutability": "view"
   }
 ]

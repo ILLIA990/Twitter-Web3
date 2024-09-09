@@ -32,7 +32,7 @@
     border-style: groove;
     border-width: 2px;
     border-radius: 20px;
-    border-color: black;
+    border-color: rgba(0, 0, 0, 0.16);
     height: 15vh;
     display: flex;
     flex-direction: row;
